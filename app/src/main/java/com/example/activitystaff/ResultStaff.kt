@@ -3,7 +3,7 @@ package com.example.activitystaff
 import com.google.gson.annotations.SerializedName
 
 class ResultStaff {
-    @field:SerializedName("pesan")
+   @field:SerializedName("pesan")
     val pesan: String? = null
 
     @field:SerializedName("staff")

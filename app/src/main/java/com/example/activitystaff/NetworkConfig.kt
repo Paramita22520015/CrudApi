@@ -45,7 +45,7 @@ object NetworkConfig {
 
         //fungsi get data
         @GET("getDataStaff")
-        fun getData() : Call<ResultStatus>
+        fun getData() : Call<ResultStaff>
 
         //fungsi update data
         @FormUrlEncoded

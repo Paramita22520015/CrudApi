@@ -17,9 +17,9 @@ class Presenter2 (val crudView: UpdateAddActivity){
                 override fun onResponse(call: Call<ResultStatus>, response: Response<ResultStatus>
                 ) {
                     if (response.isSuccessful && response.body()?.status == 200) {
-                        crudView.onSuccessAdd(response.body()?.pesan ? : "")
+                        crudView.onSuccessAdd(response.body()?.pesan ?: "")
                     } else {
-                        crudView.onErrorAdd(response.body()?.pesan ? : ""))
+                        crudView.onErrorAdd(response.body()?.pesan ?: "")
                     }
                 }
             })
